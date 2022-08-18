@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 18 15:34:22 IST 2022</td>
+<td>Started on:</td><td>Thu Aug 18 17:27:44 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10230 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13238 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,8 +77,73 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.testrunner.SearchFlightTest.runScenario()'><b>runScenario</b><br>Test class: com.testrunner.SearchFlightTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to the application", "Search Flight"</td>
-<td></td>
-<td>7</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input data-cy=&quot;fromCity&quot; id=&quot;fromCity&quot; type=&quot;text&quot; class=&quot;fsw_inputField lineHeight36 latoBlack font30&quot; readonly=&quot;&quot; value=&quot;Delhi&quot;&gt; is not clickable at point (202, 270). Other element would receive the click: &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; aria-autocomplete=&quot;list&quot; aria-controls=&quot;react-autowhatever-1&quot; class=&quot;react-autosuggest__input react-autosuggest__input--open&quot; placeholder=&quot;From&quot; value=&quot;&quot;&gt;
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;4.2.0&apos;, revision: &apos;86eb611648&apos;
+System info: host: &apos;DESKTOP-DJ47Q0F&apos;, ip: &apos;192.168.1.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c7b4ab6c4dd40624871d205b8d9a5f3, clickElement {id=b4e10539-4890-4560-91b2-37399a9c2267}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\saura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56923/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1c7b4ab6c4dd40624871d205b8d9a5f3)] -&gt; xpath: //input[@id=&quot;fromCity&quot;]]
+Session ID: 1c7b4ab6c4dd40624871d205b8d9a5f3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at com.utility.BaseClass.click(BaseClass.java:76)
+	at com.pageobjects.HomePageObjects.isCitySuggested(HomePageObjects.java:59)
+	at com.stepdefinations.SearchFlightsSteps.search_city_and_select_from_options(SearchFlightsSteps.java:46)
+	at ?.Search from City and select from options(file:///C:/Users/saura/git/MakeMyTrip/src/test/resources/FeatureFiles/SearchFlight.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1044639817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1044639817'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input data-cy=&quot;fromCity&quot; id=&quot;fromCity&quot; type=&quot;text&quot; class=&quot;fsw_inputField lineHeight36 latoBlack font30&quot; readonly=&quot;&quot; value=&quot;Delhi&quot;&gt; is not clickable at point (202, 270). Other element would receive the click: &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; aria-autocomplete=&quot;list&quot; aria-controls=&quot;react-autowhatever-1&quot; class=&quot;react-autosuggest__input react-autosuggest__input--open&quot; placeholder=&quot;From&quot; value=&quot;&quot;&gt;
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;4.2.0&apos;, revision: &apos;86eb611648&apos;
+System info: host: &apos;DESKTOP-DJ47Q0F&apos;, ip: &apos;192.168.1.57&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c7b4ab6c4dd40624871d205b8d9a5f3, clickElement {id=b4e10539-4890-4560-91b2-37399a9c2267}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\saura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56923/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1c7b4ab6c4dd40624871d205b8d9a5f3)] -&gt; xpath: //input[@id=&quot;fromCity&quot;]]
+Session ID: 1c7b4ab6c4dd40624871d205b8d9a5f3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy28.click(Unknown Source)
+	at com.utility.BaseClass.click(BaseClass.java:76)
+	at com.pageobjects.HomePageObjects.isCitySuggested(HomePageObjects.java:59)
+	at com.stepdefinations.SearchFlightsSteps.search_city_and_select_from_options(SearchFlightsSteps.java:46)
+	at ?.Search from City and select from options(file:///C:/Users/saura/git/MakeMyTrip/src/test/resources/FeatureFiles/SearchFlight.feature:8)
+</pre></div></td>
+<td>10</td>
 <td>com.testrunner.SearchFlightTest@43df23d3</td></tr>
 </table><p>
 </body>

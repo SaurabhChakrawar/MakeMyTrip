@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-18T15:34:22 IST" name="Default suite" finished-at="2022-08-18T15:34:33 IST" duration-ms="10230">
+  <suite started-at="2022-08-18T17:27:44 IST" name="Default suite" finished-at="2022-08-18T17:27:57 IST" duration-ms="13238">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-08-18T15:34:22 IST" name="Default test" finished-at="2022-08-18T15:34:33 IST" duration-ms="10230">
+    <test started-at="2022-08-18T17:27:44 IST" name="Default test" finished-at="2022-08-18T17:27:57 IST" duration-ms="13238">
       <class name="com.testrunner.SearchFlightTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T15:34:22 IST" name="setUpClass" finished-at="2022-08-18T15:34:23 IST" duration-ms="980" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T17:27:44 IST" name="setUpClass" finished-at="2022-08-18T17:27:45 IST" duration-ms="1528" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@57e4b86c]]>
+                <![CDATA[org.testng.TestRunner@2969a9a6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T15:34:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-18T15:34:31 IST" duration-ms="7934" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T17:27:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-18T17:27:56 IST" duration-ms="10896" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,58 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (202, 270). Other element would receive the click: <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open" placeholder="From" value="">
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'DESKTOP-DJ47Q0F', ip: '192.168.1.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c7b4ab6c4dd40624871d205b8d9a5f3, clickElement {id=b4e10539-4890-4560-91b2-37399a9c2267}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\saura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56923/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1c7b4ab6c4dd40624871d205b8d9a5f3)] -> xpath: //input[@id="fromCity"]]
+Session ID: 1c7b4ab6c4dd40624871d205b8d9a5f3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input data-cy="fromCity" id="fromCity" type="text" class="fsw_inputField lineHeight36 latoBlack font30" readonly="" value="Delhi"> is not clickable at point (202, 270). Other element would receive the click: <input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input react-autosuggest__input--open" placeholder="From" value="">
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'DESKTOP-DJ47Q0F', ip: '192.168.1.57', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c7b4ab6c4dd40624871d205b8d9a5f3, clickElement {id=b4e10539-4890-4560-91b2-37399a9c2267}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\saura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56923/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1c7b4ab6c4dd40624871d205b8d9a5f3)] -> xpath: //input[@id="fromCity"]]
+Session ID: 1c7b4ab6c4dd40624871d205b8d9a5f3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:566)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy28.click(Unknown Source)
+at com.utility.BaseClass.click(BaseClass.java:76)
+at com.pageobjects.HomePageObjects.isCitySuggested(HomePageObjects.java:59)
+at com.stepdefinations.SearchFlightsSteps.search_city_and_select_from_options(SearchFlightsSteps.java:46)
+at ✽.Search from City and select from options(file:///C:/Users/saura/git/MakeMyTrip/src/test/resources/FeatureFiles/SearchFlight.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T15:34:31 IST" name="tearDownClass" finished-at="2022-08-18T15:34:33 IST" duration-ms="1244" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testrunner.SearchFlightTest@43df23d3]" started-at="2022-08-18T17:27:56 IST" name="tearDownClass" finished-at="2022-08-18T17:27:57 IST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
